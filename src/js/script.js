@@ -15,15 +15,17 @@ function renderPost(post){
             ${post.body}
         </p>
         <div class="icons">
-            <div class="likes">
+            <div class="reactions">
                 <p>
-                    <i class="fa-regular fa-thumbs-up"></i></span> ${post.likes} likes
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <span class="like">${post.likes} likes</span>
                 </p>
                 <p>
-                    <i class="fa-regular fa-thumbs-down"></i> ${post.dislikes} dislikes
+                    <i class="fa-regular fa-thumbs-down"></i> 
+                    <span class="dislike">${post.dislikes} dislikes</span>
                 </p>
                 <p>
-                    <i class="fa-regular fa-message"></i> Comments
+                    <span><i class="fa-regular fa-message"></i> Comments
                 </p>
             </div>
             <div>
@@ -33,7 +35,36 @@ function renderPost(post){
             </div>
         </div>
     `
+
+    //Likes Event Listener
+    content.querySelector(".fa-thumbs-up").addEventListener("click", () => {
+        post.likes +=1
+        console.log("It responds!!!")
+        content.querySelector(".like").textContent = ` ${post.likes} likes`
+        updateReaction(post)
+    })
+
+    //Dislike Event Listener
+    content.querySelector(".fa-thumbs-down").addEventListener("click", () => {
+        post.dislikes +=1
+        content.querySelector(".dislike").textContent = ` ${post.dislikes} dislikes`
+        updateReaction(post)
+    })
+
     document.querySelector(".contents").appendChild(content)
+}
+
+//Updates likes or Dislikes in the server
+function updateReaction(post){
+    fetch(`http://localhost:3000/posts/${post.id}`, {
+        method:"PATCH",
+        headers:{
+            "content-type":"application/json"
+        },
+        body: JSON.stringify(post)
+    })
+    .then(res => res.json())
+    .then(data => console.log(data))
 }
 
 //Display Posts
