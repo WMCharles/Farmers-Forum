@@ -3,20 +3,23 @@
         {
             "id": 1,
             "title": "I need Help With My Goats",
-            "body":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nam ducimus illo nisi amet labore? Quo mollitia qui non explicabo rem adipisci hic debitis numquam, culpa pariatur sit nam eum?",
-            "likes": 13
+            "body":"My chicken (kienyeji) have not been laying eggs since December. They are feeding freely in the compound and with some chicken mash which is given in the morning before letting them free. What could be the problem?",
+            "likes": 0,
+            "dislikes":0
         },
         {
             "id": 2,
             "title": "My poulry birds died all over sudden",
-            "body":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nam ducimus illo nisi amet labore? Quo mollitia qui non explicabo rem adipisci hic debitis numquam, culpa pariatur sit nam eum?",
-            "likes": 13
+            "body":"Hey guys. Kindly advise how I can get market for pumpkins, avocados, matoke, spinach, sukuma wiki, cabbages,egg plants, hoho, chillies, managu, maize, potatoes etc. they are in plenty I need to start a business from scratch. Also anyone who has a lorry or transportation that does that route at least twice a week message me.Location is bomet county",
+            "likes": 0,
+            "dislikes":0
         },
         {
             "id": 3,
             "title": "My goat ",
-            "body":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nam ducimus illo nisi amet labore? Quo mollitia qui non explicabo rem adipisci hic debitis numquam, culpa pariatur sit nam eum?",
-            "likes": 13
+            "body":"Hey farmers Nani amewahi fikisha 10bags of beans per acre coz Mimi maximum huwa natoa per acre ni 4 bags of 90k .and the way beans ziko na bei poa.",
+            "likes": 0,
+            "dislikes":0
         }
     ]
 }
