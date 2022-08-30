@@ -72,3 +72,22 @@ function displayPost(){
     fetchPosts()
 }
 displayPost()
+
+// Event Listeners for Handling Modal 
+
+// When User Clicks Ask Question Section
+document.getElementById("question").addEventListener("click", ()=> {
+    document.getElementById("modal").style.display = "block"
+})
+
+// When User Clicks on the "x" icon to close modal
+document.getElementById("close").addEventListener("click", ()=>{
+    document.getElementById("modal").style.display = "none"
+})
+
+// When User Clicks anywhere outside the modal to close it
+window.onclick = function(event) {
+    if (event.target == document.getElementById("modal")) {
+        document.getElementById("modal").style.display = "none"
+    }
+}
