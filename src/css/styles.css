@@ -8,3 +8,44 @@ body {
     width: 60%;
     margin: auto;
 }
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form {
+    width: 100%;
+    /* padding: auto; */
+    margin-top: 10px;
+}
+.comments {
+    display: none;
+}
+.comment {
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid grey;
+    font-size: 0.8rem;
+}
+.comment:focus {
+    outline: none;
+}
+.comment-button {
+    width: 10%;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgb(92, 114, 238);
+    cursor: pointer;
+    transition: color 300ms;
+}
+.comment-button:hover {
+    color: rgb(37, 68, 245);
+}
+  
+.comment-button:active {
+   color: rgb(127, 146, 250);
+}
+.comment-button:focus {
+    outline: none;
+} 
