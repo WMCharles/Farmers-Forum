@@ -3,19 +3,19 @@
         {
             "id": 1,
             "title": "I need Help With My Goats",
-            "content":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nam ducimus illo nisi amet labore? Quo mollitia qui non explicabo rem adipisci hic debitis numquam, culpa pariatur sit nam eum?",
+            "body":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nam ducimus illo nisi amet labore? Quo mollitia qui non explicabo rem adipisci hic debitis numquam, culpa pariatur sit nam eum?",
             "likes": 13
         },
         {
             "id": 2,
             "title": "My poulry birds died all over sudden",
-            "content":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nam ducimus illo nisi amet labore? Quo mollitia qui non explicabo rem adipisci hic debitis numquam, culpa pariatur sit nam eum?",
+            "body":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nam ducimus illo nisi amet labore? Quo mollitia qui non explicabo rem adipisci hic debitis numquam, culpa pariatur sit nam eum?",
             "likes": 13
         },
         {
             "id": 3,
             "title": "My goat ",
-            "content":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nam ducimus illo nisi amet labore? Quo mollitia qui non explicabo rem adipisci hic debitis numquam, culpa pariatur sit nam eum?",
+            "body":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nam ducimus illo nisi amet labore? Quo mollitia qui non explicabo rem adipisci hic debitis numquam, culpa pariatur sit nam eum?",
             "likes": 13
         }
     ]
