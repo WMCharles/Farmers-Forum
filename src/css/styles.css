@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'PT Sans', sans-serif;
-    font-size: 1.05em;
+    font-size: 1.01em;
 }
 .container {
     width: 60%;
@@ -16,11 +16,11 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.likes {
+.reactions {
     display: flex;
     justify-content: space-between;
 }
-.likes p {
+.reactions p {
     margin: 0 1rem 0 0;
 }
 .fa-regular {
