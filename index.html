@@ -15,10 +15,36 @@
             <div class="icon">
                 <i class='fas fa-marker' style='font-size:24px'></i>
             </div>
-            <div class="question">
+            <div class="question" id="question">
                 What do you want to ask or share?
             </div>
         </div>
+        <!-- Modal Section -->
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <div>
+                    <span class="close" id="close">&times;</span>
+                </div>
+                <hr>
+                <div>
+                    <form class="form" id="form">
+                        <div class="input-group">
+                            <label for="title">Title:</label>
+                            <input type="text" id="title" class="title">
+                        </div>
+                        <div class="input-group">
+                            <label for="description">Description:</label>
+                            <input type="textarea" id="description" class="description">
+                        </div>
+                        <div class="input-group btns">
+                            <input type="submit" id="cancel" class="cancel" value="cancel">
+                            <input type="submit" value="Ask Question" id="ask">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal Section -->
         <div class="contents">
             
         </div>
