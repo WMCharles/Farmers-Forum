@@ -67,6 +67,38 @@ function updateReaction(post){
     .then(data => console.log(data))
 }
 
+//Function that takes user input values
+function userPost(e){
+
+    e.preventDefault()
+
+    let postObj = {
+        title:e.target.post_title.value,
+        body:e.target.description.value,
+        likes:0,
+        dislikes:0
+    }
+
+    savePost(postObj)
+    renderPost(postObj)
+}
+
+//Add user post to server
+function savePost(postObj){
+    fetch("http://localhost:3000/posts", {
+        method:"POST",
+        headers:{
+            "content-type":"application/json"
+        },
+        body:JSON.stringify(postObj)
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+}
+
+//Submit form event-listener
+document.getElementById("form").addEventListener("submit", userPost)
+
 //Display Posts
 function displayPost(){
     fetchPosts()
