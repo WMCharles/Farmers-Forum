@@ -25,14 +25,25 @@ function renderPost(post){
                     <span class="dislike">${post.dislikes} dislikes</span>
                 </p>
                 <p>
-                    <span><i class="fa-regular fa-message"></i> Comments
+                    <span><i class="fa-regular fa-message" id="toggle"></i> Comments
                 </p>
             </div>
-            <div>
-                <p>
-                    Share <i class="fa-regular fa-share-from-square"></i>
-                </p>
+            
+        </div>
+
+        <div id="comments">
+            <div class="comment-form">
+                <form action="/" class="form" id="myForm">
+                    <div class="input-control">
+                        <label for="comment">Comment:</label>
+                        <input type="text" name="" id="comment">
+                    </div>
+                </form>
             </div>
+            <div class="comment-items">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, explicabo ut? Nemo quos eveniet perferendis soluta itaque omnis quasi. Labore ratione mollitia delectus amet asperiores, exercitationem autem officia. Nisi, ullam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis non expedita tempora deleniti provident earum voluptate incidunt nesciunt animi deserunt doloribus assumenda, culpa quidem aut odio dolorum sapiente dignissimos magni?</p>
+            </div>   
         </div>
     `
 
@@ -50,6 +61,17 @@ function renderPost(post){
         content.querySelector(".dislike").textContent = ` ${post.dislikes} dislikes`
         updateReaction(post)
     })
+
+    // Show & Hide Comment Section
+    const targetDiv = content.querySelector("#comments");
+    const btn = content.querySelector("#toggle");
+    btn.onclick = function () {
+    if (targetDiv.style.display !== "block") {
+        targetDiv.style.display = "block";
+    } else {
+        targetDiv.style.display = "none";
+    }
+    };
 
     document.querySelector(".contents").appendChild(content)
 }
