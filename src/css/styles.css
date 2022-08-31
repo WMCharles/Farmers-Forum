@@ -35,20 +35,20 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     height: 8vh;
     margin-bottom: 10px;
 }
 
 .icon {
-    padding: 1em;
+    padding: 8px;
 }
 
 .question {
     background-color: rgb(170, 170, 170, 0.12);
-    padding: 10px 10px 10px 20px;
-    width: 80%;
+    padding: 8px 8px 8px 20px;
+    width: 100%;
     border-radius: 10px;
     cursor: pointer;
 }
