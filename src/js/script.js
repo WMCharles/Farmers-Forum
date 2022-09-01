@@ -126,7 +126,7 @@ function displayPost(){
     fetchPosts()
 }
 displayPost()
-
+   
 // Event Listeners for Handling Modal 
 
 // When User Clicks Ask Question Section
