@@ -51,13 +51,18 @@ function renderPost(post){
     // 3. iterate through the array
     // 4. Add content to DOM
     let text = ""
+
     let commentArray = post.comments
 
     commentArray.forEach(comment => {
-        text += comment.message + "<br>"
+
+        text += `<p class="comment-item">${comment.message}</p>`
+
     })
 
     content.querySelector(".comment-items").innerHTML = text
+
+    
 
     //Likes Event Listener
     content.querySelector(".fa-thumbs-up").addEventListener("click", () => {

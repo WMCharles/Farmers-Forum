@@ -30,6 +30,14 @@ body {
     color: blue;
 }
 
+/* Comment Item Styling */
+
+.comment-item {
+    background-color: rgb(170, 170, 170, 0.12);
+    padding: 5px 5px 5px 20px;
+    border-radius: 5px;
+}
+
 /* Ask Question Section */
 .submit {
     display: flex;
