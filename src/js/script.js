@@ -41,11 +41,23 @@ function renderPost(post){
                 </form>
             </div>
             <div class="comment-items">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, explicabo ut? Nemo quos eveniet perferendis soluta itaque omnis quasi. Labore ratione mollitia delectus amet asperiores, exercitationem autem officia. Nisi, ullam!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis non expedita tempora deleniti provident earum voluptate incidunt nesciunt animi deserunt doloribus assumenda, culpa quidem aut odio dolorum sapiente dignissimos magni?</p>
+                
             </div>   
         </div>
     `
+    // Comments
+    // 1. Get each post
+    // 2. Get the comments array
+    // 3. iterate through the array
+    // 4. Add content to DOM
+    let text = ""
+    let commentArray = post.comments
+
+    commentArray.forEach(comment => {
+        text += comment.message + "<br>"
+    })
+
+    content.querySelector(".comment-items").innerHTML = text
 
     //Likes Event Listener
     content.querySelector(".fa-thumbs-up").addEventListener("click", () => {
