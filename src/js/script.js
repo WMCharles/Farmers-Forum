@@ -10,7 +10,23 @@ function renderPost(post){
     let content = document.createElement("div")
     content.className = "content"
     content.innerHTML = 
-    `   <h3><i class="fa-regular fa-user"></i> - ${post.title}</h3>
+    `   <div class="heading">
+            <h3>${post.title}</h3>
+            <div class="dropdown">
+                <i class="material-icons">more_horiz</i>
+                <div class="dropdown-content">
+                    <div class="save">
+                        <span><i class="fa fa-bookmark-o" style="font-size:24px"></i> Save Post
+                    </div>
+                    <div class="delete">
+                        <p><span><i class="fa fa-trash-o" style="font-size:24px"></i></span> Delete Post</p>
+                    </div>
+                    <div class="notification">
+                        <p><span><i class="fa fa-bell-o" style="font-size:24px"></i></span> Turn on notification</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="image">
             <img src="${post.image}" alt="">
         </div>
@@ -93,6 +109,16 @@ function renderPost(post){
     }
     };
 
+    // show and hide menu when user clicks ellipsis icon
+    content.querySelector(".material-icons").addEventListener("click", ()=>{
+        let dropdown = content.querySelector(".dropdown-content")
+        if(dropdown.style.display !== "block"){
+            dropdown.style.display = "block"
+        } else {
+            dropdown.style.display = "none"
+        }
+    })
+
     document.querySelector(".contents").appendChild(content)
 }
 
@@ -167,3 +193,7 @@ window.onclick = function(event) {
         document.getElementById("modal").style.display = "none"
     }
 }
+
+document.querySelector(".fa-user").addEventListener("click", ()=>{
+    console.log("works like magic!!!")
+})
