@@ -81,7 +81,30 @@ function renderPost(post){
 
     content.querySelector(".comment-items").innerHTML = text
 
-    
+    // Add comment
+    content.querySelector('#myForm').addEventListener('submit', (e) => {
+        e.preventDefault()
+        handleComment()
+    })
+
+    let input = content.querySelector('#comment')
+    let itemall = content.querySelector('.comment-items')
+
+    function handleComment(){
+        
+
+        // item
+        let item = document.createElement('p')
+        item.classList.add('comment-item')
+        item.innerText = input.value
+        
+
+        //if input area is empty
+        if(input.value === "") return
+
+        itemall.appendChild(item)
+        input.value = ""
+    }
 
     //Likes Event Listener
     content.querySelector(".fa-thumbs-up").addEventListener("click", () => {
