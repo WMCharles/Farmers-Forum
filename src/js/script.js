@@ -53,17 +53,17 @@ function renderPost(post){
     // 2. Get the comments array
     // 3. iterate through the array
     // 4. Add content to DOM
-    let text = ""
+    // let text = ""
 
-    let commentArray = post.comments
+    // let commentArray = post.comments
 
-    commentArray.forEach(comment => {
+    // commentArray.forEach(comment => {
 
-        text += `<p class="comment-item">${comment.message}</p>`
+    //     text += `<p class="comment-item">${comment.message}</p>`
 
-    })
+    // })
 
-    content.querySelector(".comment-items").innerHTML = text
+    // content.querySelector(".comment-items").innerHTML = text
 
     
 
@@ -117,6 +117,7 @@ function userPost(e){
     let postObj = {
         title:e.target.post_title.value,
         body:e.target.description.value,
+        image:e.target.image.value,
         likes:0,
         dislikes:0
     }
