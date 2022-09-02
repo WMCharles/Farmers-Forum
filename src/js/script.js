@@ -121,8 +121,8 @@ function renderPost(post){
 
     // Deleting post
     content.querySelector(".fa-trash-o").addEventListener("click", ()=> {
-        console.log("Gamabunta")
         content.remove()
+        deletePost(post.id)
     })
 
     document.querySelector(".contents").appendChild(content)
@@ -172,6 +172,18 @@ function savePost(postObj){
     .then(data => console.log(data))
 }
 
+// Delete Post from Server
+function deletePost(id){
+    fetch(`http://localhost:3000/posts/${id}`, {
+        method:"DELETE",
+        header:{
+            "content-type":"application/json"
+        }
+    })
+    .then(resp => resp.json())
+    .then(post => console.log(post))
+}
+
 //Submit form event-listener
 document.getElementById("form").addEventListener("submit", userPost)
 
@@ -199,7 +211,3 @@ window.onclick = function(event) {
         document.getElementById("modal").style.display = "none"
     }
 }
-
-document.querySelector(".fa-user").addEventListener("click", ()=>{
-    console.log("works like magic!!!")
-})
