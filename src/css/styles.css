@@ -85,8 +85,8 @@ body {
 /* Comment Item Styling */
 
 .comment-item {
-    background-color: rgb(170, 170, 170, 0.12);
-    padding: 5px 5px 5px 20px;
+    background-color: rgb(170, 170, 170, 0.2);
+    padding: 1em;
     border-radius: 5px;
 }
 
