@@ -11,6 +11,9 @@ function renderPost(post){
     content.className = "content"
     content.innerHTML = 
     `   <h3><i class="fa-regular fa-user"></i> - ${post.title}</h3>
+        <div class="image">
+            <img src="${post.image}" alt="">
+        </div>
         <p>
             ${post.body}
         </p>
@@ -25,7 +28,7 @@ function renderPost(post){
                     <span class="dislike">${post.dislikes} dislikes</span>
                 </p>
                 <p>
-                    <span><i class="fa-regular fa-message" id="toggle"></i> Comments
+                    <span><i class="fa-regular fa-message" id="toggle"></i>
                 </p>
             </div>
             
