@@ -3,18 +3,26 @@
     {
       "title": "Did You Know - Merino Sheep",
       "body": "Back in 2004, Shrek the Merino sheep hid in a cave for six years so he wouldn’t have to get sheared. But the time he was cornered and given his long-overdue haircut on New Zealand national television, there was enough wool to make 20 mens suits. In 2015, a sheep named Chris who was found in Canberra, Australia, unloaded 89-pounds of fleece. Unlike wild sheep or “hair sheep,” (breeds that naturally shed), the wool of domestic breeds like the Merino will just keep growing, according to Dave Thomas, the now retired head of sheep studies at the University of Wisconsin, Madison.",
-      "image":"https://img.freepik.com/premium-photo/shoyu-ramen-noodle-with-pork-egg_1339-63031.jpg?w=2000",
-      "comments":[
+      "image": "https://img.freepik.com/premium-photo/shoyu-ramen-noodle-with-pork-egg_1339-63031.jpg?w=2000",
+      "comments": [
         {
-          "message":"Yes, haha."
-      },
-      {
-          "message":"No, shush!"
-      }
+          "message": "Yes, haha."
+        },
+        {
+          "message": "No, shush!"
+        }
       ],
       "likes": 1,
       "dislikes": 1,
       "id": 1
+    },
+    {
+      "title": "Hello guys",
+      "body": "Back in 2004, Shrek the Merino sheep hid in a cave for six years so he wouldn’t have to get sheared. But the time he was cornered and given his long-overdue haircut on New Zealand national television, there was enough wool to make 20 mens suits. In 2015, a sheep named Chris who was found in Canberra, Australia, unloaded 89-pounds of fleece. Unlike wild sheep or “hair sheep,” (breeds that naturally shed), the wool of domestic breeds like the Merino will just keep growing, according to Dave Thomas, the now retired head of sheep studies at the University of Wisconsin, Madison.",
+      "image": "https://img.freepik.com/premium-photo/shoyu-ramen-noodle-with-pork-egg_1339-63031.jpg?w=2000",
+      "likes": 0,
+      "dislikes": 0,
+      "id": 2
     }
   ]
 }
