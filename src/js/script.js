@@ -64,22 +64,6 @@ function renderPost(post){
             </div>   
         </div>
     `
-    // Comments
-    // 1. Get each post
-    // 2. Get the comments array
-    // 3. iterate through the array
-    // 4. Add content to DOM
-    let text = ""
-
-    let commentArray = post.comments
-
-    commentArray.forEach(comment => {
-
-        text += `<p class="comment-item">${comment.message}</p>`
-
-    })
-
-    content.querySelector(".comment-items").innerHTML = text
 
     // Add comment
     content.querySelector('#myForm').addEventListener('submit', (e) => {
@@ -178,6 +162,11 @@ function userPost(e){
         dislikes:0
     }
 
+    // clear form fields after submit
+    e.target.post_title.value=""
+    e.target.description.value=""
+    e.target.image.value=""
+    
     savePost(postObj)
     renderPost(postObj)
 }
