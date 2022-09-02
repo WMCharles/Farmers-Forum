@@ -119,6 +119,12 @@ function renderPost(post){
         }
     })
 
+    // Deleting post
+    content.querySelector(".fa-trash-o").addEventListener("click", ()=> {
+        console.log("Gamabunta")
+        content.remove()
+    })
+
     document.querySelector(".contents").appendChild(content)
 }
 
