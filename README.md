@@ -18,18 +18,6 @@ Most farmers face a lot of challenges in their day to day life as they go about 
 ## API
 * The application will use custom JSON server instead of a third party API. 
 
-
-## Table of content
-
-+ [Introduction](#introduction)
-+ [Scholarships Page](#scholarships-page)
-+ [Live Demo](#live-demo)
-+ [Technologies Used](#technologies-used)
-+ [Installation](#installation)
-+ [Contributions](#contributions)
-+ [Bugs & Feature Request](#bugs--fixes--feature-request)
-+ [Authors](#authors)
-
 ## Live Demo
 
 Click this [link](https://wmcharles.github.io/Farmers-Forum/) to visit the website.
